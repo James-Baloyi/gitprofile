@@ -76,9 +76,7 @@ class App extends React.Component{
     this.resetProfile();
 
     var user = users[0];
-    this.setState({selectedUser: user}, ()=>{
-      console.log(this.state.selectedUser);
-    });
+    this.setState({selectedUser: user});
   }
 
   showRepos(url, title){
@@ -90,10 +88,7 @@ class App extends React.Component{
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
               var json = JSON.parse(xhr.responseText);
-              this.setState({repos: json},
-                ()=>{
-                  console.log(json);
-                });
+              this.setState({repos: json});
             }
           }
         }
