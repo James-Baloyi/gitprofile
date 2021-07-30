@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+.header{
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,.13);
+  height: 55px;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header input{
+  height: 35px;
+  margin-top: calc((55px - 35px)/4);
+  width: 60%;
+  min-width: 240px;
+  max-width: 600px;
+  border: 1px #999 solid;
+  border-radius: 2px;
+  padding: 4px;
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.predictive{
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,.13);
+}
+
+.predictive button{
+  background: none;
+  border: 0px;
+  width: 100%;
+  height: 35px;
+  font-size: .9em;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.container, .sub-api-container{
+  width: 60%;
+  min-width: 240px;
+  max-width: 600px;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  margin-top: 100px;
+  padding: 10px 0px 10px 0px;
+}
+
+.sub-api-container{
+  border: 0px;
+  margin-top: 40px;
+}
+
+.git-avatar{
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+.git-username{
+  font-size: 1.4em;
+  margin: 0px;
+  margin-top: 10px;
+  color: #666;
+}
+
+.clickables{
+  margin-top:25px;
+}
+
+.git-clickable{
+  padding: 4px;
+  border: #f43 1px solid;
+  border-radius: 3px;
+  background-color: #faafff;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.git-clickable a{
+  color: #f43;
+  text-decoration: none;
+}
+
+.blue{
+  border: 1px #159 solid;
+  background-color: #159fff;
+}
+
+.blue a{
+  color: #159;
+}
+.repo-box{
+  width: 40%;
+  border: 1px #666 solid;
+  display: inline;
+  margin-top: 5px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .repo-box{
+    width: 80%;
+    border: 1px #666 solid;
+    display: inline;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container, .sub-api-container{
+    width: 80%;
+    min-width: 240px;
+    max-width: 600px;
+    border: 1px #999 solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sub-api-container{
+    border: 0px;
+    margin-top: 10px;
+    padding-bottom: 55px;
   }
+
+  .git-clickable{
+    padding: 4px;
+    border: #f43 1px solid;
+    border-radius: 3px;
+    background-color: #faafff;
+    cursor: pointer;
+    margin: 7px;
+    white-space: nowrap
+  }
+  
+  .clickables{
+    margin-top:15px;
+    white-space: inherit;
+    overflow-x: scroll;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .blue{
+    border: 1px #159 solid;
+    background-color: #159fff;
+  }
+  
+  .blue a{
+    color: #159;
+  }
+
+  .header{
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    box-shadow: 0px -3px 3px 0px rgba(0,0,0,.13);
+    position: fixed;
+    bottom: 0;
+  }
+
+  .header input{
+    height: 30px;
+    margin-top: calc((55px - 35px)/4);
+    width: 94%;
+    min-width: 240px;
+    max-width: 600px;
+    border: 0px #999 solid;
+    border-radius: 2px;
+    padding: 4px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .predictive{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -3px 3px 0px rgba(0,0,0,.13);
+    margin-top: -75px;
+  }
+  
+  .predictive button{
+    background: none;
+    border: 0px;
+    width: 100%;
+    height: 35px;
+    font-size: .9em;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
 }
